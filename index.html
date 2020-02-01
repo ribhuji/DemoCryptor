@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<!-- scripts from here -->
+	<script src="js/aes.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+     
+	<head>
+		<meta charset="utf-8"/>
+		<title>DemoCryptor</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body>
+		
+
+		<a class="back"></a>
+
+		<div id="stage">
+			<!-- As a link -->
+
+			<div id="step1">
+				<div class="content">
+					<h1><b>Welcome to DemoCryptor (Democracy + Encryption)!!</b></h1>
+					<h1>What do you want to do?</h1>
+					<a class="button encrypt blue">Encrypt a file</a>
+					<a class="button decrypt green">Decrypt a file</a>
+				</div>
+			</div>
+
+			<div id="step2">
+
+				<div class="content if-encrypt">
+					<h1><b>Choose the file from your computer to encrypt!!</b></h1>
+					<h2>An encrypted copy of the file will be generated. </h2>
+					<h2>P.S: We don't keep a copy of the file!! ;-) </h2>
+					<a class="button browse blue">Browse</a>
+
+					<input type="file" id="encrypt-input" />
+				</div>
+
+				<div class="content if-decrypt">
+					<h1><b>Choose the file you want to decrypt!!</b></h1>
+					<h2>Note: Only files encrypted on DemoCrypto can be decrypted.</h2>
+					<h2>P.S: We don't keep a copy of the file!! ;-) </h2>
+					<a class="button browse blue">Browse</a>
+
+					<input type="file" id="decrypt-input" />
+				</div>
+
+			</div>
+
+			<div id="step3">
+
+				<div class="content if-encrypt">
+					<h1><b>Enter a password</b></h1>
+					<h2>We will use this phrase as an encryption key. </h2>
+					<h2>P.S.: Use a strong password OR else it will defeat the purpose!!</h2>
+
+					<input type="password" />
+					<a class="button process red">Encrypt!</a>
+				</div>
+
+				<div class="content if-decrypt">
+					<h1><b>Enter the password!!</b></h1>
+					<h2>Enter the password that was used to encrypt this file.</h2>
+					<h2></h2>
+
+					<input type="password" />
+					<a class="button process red">Decrypt!</a>
+				</div>
+
+			</div>
+
+			<div id="step4">
+
+				<div class="content">
+					<h1><b>Your file is ready!</b></h1>
+					<h2>Happy Privacy ;-)</h2>
+					<a class="button download green">Download</a>
+					<a class="button decrypt magenta">Share on Telegram</a>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
